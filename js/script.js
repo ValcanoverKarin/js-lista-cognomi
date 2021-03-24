@@ -15,14 +15,29 @@ var arrayCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 arrayCognomi.push(cognomeUtente);
 //console.log(arrayCognomi);
 
-//stampo la lista di cognomi in ordine alfabetico
+//stampo la lista di cognomi in ordine alfabetico for
 arrayCognomi.sort();
 console.log(arrayCognomi);
 
 for ( var i = 0; i < arrayCognomi.length; i++ ) {
+
     if (arrayCognomi[i] == cognomeUtente) {
-        var cognomeUtentePosizione = i + 1
+        var cognomeUtentePosizione = i + 1;
     }
 }
 
 alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );
+
+//stampo la lista di cognomi in ordine alfabetico while
+//var i = 0;
+
+//while ( i < arrayCognomi.length ) {
+
+//    if (arrayCognomi[i] == cognomeUtente) {
+//        var cognomeUtentePosizione = i + 1;
+//    }
+
+//    i++;
+//}
+
+//alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );

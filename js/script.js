@@ -21,6 +21,8 @@ console.log(arrayCognomi);
 
 for ( var i = 0; i < arrayCognomi.length; i++ ) {
     if (arrayCognomi[i] == cognomeUtente) {
-        console.log(i);
+        var cognomeUtentePosizione = i + 1
     }
 }
+
+alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );

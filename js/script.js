@@ -10,3 +10,7 @@ console.log(cognomeUtente);
 //array con altri cognomi
 var arrayCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 //console.log(arrayCognomi);
+
+//inserisco il cognome nella lista
+arrayCognomi.push(cognomeUtente);
+console.log(arrayCognomi);

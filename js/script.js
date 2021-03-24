@@ -15,6 +15,12 @@ var arrayCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 arrayCognomi.push(cognomeUtente);
 //console.log(arrayCognomi);
 
-//cognomi in ordine alfabetico
+//stampo la lista di cognomi in ordine alfabetico
 arrayCognomi.sort();
 console.log(arrayCognomi);
+
+for ( var i = 0; i < arrayCognomi.length; i++ ) {
+    if (arrayCognomi[i] == cognomeUtente) {
+        console.log(i);
+    }
+}

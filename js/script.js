@@ -13,4 +13,8 @@ var arrayCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 
 //inserisco il cognome nella lista
 arrayCognomi.push(cognomeUtente);
+//console.log(arrayCognomi);
+
+//cognomi in ordine alfabetico
+arrayCognomi.sort();
 console.log(arrayCognomi);

@@ -13,31 +13,49 @@ var arrayCognomi = ['Bianchi', 'Neri', 'Rossi', 'Verdi', 'Gialli'];
 
 //inserisco il cognome nella lista
 arrayCognomi.push(cognomeUtente);
-//console.log(arrayCognomi);
+console.log(arrayCognomi);
 
-//stampo la lista di cognomi in ordine alfabetico for
+//ordine alfabetico 
 arrayCognomi.sort();
 console.log(arrayCognomi);
 
+//stampo la lista di cognomi in ordine alfabetico 
 for ( var i = 0; i < arrayCognomi.length; i++ ) {
-
-    if (arrayCognomi[i] == cognomeUtente) {
-        var cognomeUtentePosizione = i + 1;
-    }
+    var cognomeAttuale = arrayCognomi[i]
+    var contenutoAttualeUl = document.getElementById('lista-cognomi').innerHTML
+    document.getElementById('lista-cognomi').innerHTML = contenutoAttualeUl + '<li>' + cognomeAttuale + '</li>';
 }
 
-alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );
+//for
+//var cognomeUtentePosizione = -1;
 
-//stampo la lista di cognomi in ordine alfabetico while
-//var i = 0;
+//for ( var i = 0; i < arrayCognomi.length; i++ ) {
+//    var cognomeAttuale = arrayCognomi[i]
 
-//while ( i < arrayCognomi.length ) {
-
-//    if (arrayCognomi[i] == cognomeUtente) {
+//    if (cognomeAttuale == cognomeUtente) {
 //        var cognomeUtentePosizione = i + 1;
 //    }
-
-//    i++;
 //}
+
+//document.getElementById('posizione').innerHTML = "Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione;
+
+//alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );
+
+//while
+var cognomeUtentePosizione = -1;
+
+var i = 0;
+
+while ( i < arrayCognomi.length ) {
+    var cognomeAttuale = arrayCognomi[i]
+
+    if (cognomeAttuale == cognomeUtente) {
+        var cognomeUtentePosizione = i + 1;
+    }
+
+    i++;
+}
+
+document.getElementById('posizione').innerHTML = "Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione;
 
 //alert("Il tuo cognome nella lista è nella posizione numero " + cognomeUtentePosizione );
